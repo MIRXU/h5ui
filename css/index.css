@@ -1,0 +1,101 @@
+.main{
+    background: url(../imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    position: relative;
+}
+.heart,.content{
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.heart{
+    background: url(../imgs/logo1.png);
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    z-index: 99;
+    margin-left: -100px;
+    margin-top: -100px;
+
+}
+.content{
+    background: url(../imgs/bg_content.png);
+    background-size: 100%;
+    width: 330px;
+    height: 330px;
+    margin-left: -165px;
+    margin-top: -165px;
+    z-index:99;
+    display: none;
+}
+.content>.content-info>h3{
+    z-index: 101;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+}
+table tr{
+    width: 100%;
+}
+table tr>td{
+    width: 50%;
+    display: inline-block;
+    height: 105px;
+    position: relative;
+}
+table tr>td>span{
+    color: #fff;
+    font-size: 18px;
+}
+.nav{
+    position: absolute;
+    left: 36%;
+    top: 26%;
+    display: none;
+}
+.nav>span{
+        position: relative;
+        top: 82px;
+        left: 81px;
+        color: #fff;
+        font-size: 18px;
+}
+table tr>td>img:hover{
+    transform: scale(1.5);
+}
+
+.content-info{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    position: absolute;
+    top: 11%;
+    left: 7%;
+}
+.scan{
+    animation:mymove 2s infinite;
+    width: 40px;
+    height: 40px;
+}
+@keyframes mymove
+{
+    0%{
+    transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.5); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+    }
+
+}
